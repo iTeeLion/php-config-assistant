@@ -21,7 +21,7 @@ foreach($arConfig['presets'] as $arPreset){
 
 // Write configs
 foreach($arConfig['files'] as $arFileConfig){
-    if($arFileConfig['preset'] != ''){
+    if(is_file($arFileConfig['path']) && $arFileConfig['preset'] != ''){
         echo 'Write config preset "' . $arFileConfig['preset'] . '" for: ' . $arFileConfig['path'] . PHP_EOL;
         if(!is_file($arFileConfig['path'].'.orig')){
             copy($arFileConfig['path'], $arFileConfig['path'].'.orig');
