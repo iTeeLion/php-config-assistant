@@ -1,7 +1,7 @@
 <?php
 
 // Load configs
-$configFilePath = __DIR__ . '/php_config_assistant_settings.json';
+$configFilePath = __DIR__ . '/settings.json';
 if(!is_file($configFilePath)) die('No config found!');
 $arConfig = json_decode(file_get_contents($configFilePath), true);
 if(!is_array($arConfig) && count($arConfig) < 1) die('Bad config');
