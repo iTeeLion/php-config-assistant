@@ -13,16 +13,16 @@
                     "value": "0"
                 },
                 "memory_limit": {
-                    "value": "512M"
+                    "value": "1024M"
                 },
                 "post_max_size": {
-                    "value": "512M"
+                    "value": "1024M"
                 },
                 "upload_max_filesize": {
-                    "value": "2048M"
+                    "value": "4096M"
                 },
                 "max_input_vars": {
-                    "value": "10000"
+                    "value": "100000"
                 },
                 "error_reporting": {
                     "value": "E_ALL"
@@ -51,16 +51,16 @@
                     "value": "0"
                 },
                 "memory_limit": {
-                    "value": "512M"
+                    "value": "1024M"
                 },
                 "post_max_size": {
-                    "value": "512M"
+                    "value": "1024M"
                 },
                 "upload_max_filesize": {
-                    "value": "2048M"
+                    "value": "4096M"
                 },
                 "max_input_vars": {
-                    "value": "10000"
+                    "value": "100000"
                 },
                 "error_reporting": {
                     "value": "E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED"
@@ -78,77 +78,108 @@
         }
     ],
     "files": [
+        
         {
             "path": "/etc/php/5.6/cgi/php.ini",
             "preset": "prod"
-        },
-        {
-            "path": "/etc/php/5.6/cli/php.ini",
-            "preset": "dev"
         },
         {
             "path": "/etc/php/5.6/fpm/php.ini",
             "preset": "prod"
         },
         {
-            "path": "/etc/php/7.0/cgi/php.ini",
-            "preset": "prod"
+            "path": "/etc/php/5.6/fpm/php.dev.ini",
+            "preset": "dev"
         },
         {
-            "path": "/etc/php/7.0/cli/php.ini",
+            "path": "/etc/php/5.6/cli/php.ini",
             "preset": "dev"
+        },
+        
+        {
+            "path": "/etc/php/7.0/cgi/php.ini",
+            "preset": "prod"
         },
         {
             "path": "/etc/php/7.0/fpm/php.ini",
             "preset": "prod"
         },
         {
-            "path": "/etc/php/7.1/cgi/php.ini",
-            "preset": "prod"
+            "path": "/etc/php/7.0/fpm/php.dev.ini",
+            "preset": "dev"
         },
         {
-            "path": "/etc/php/7.1/cli/php.ini",
+            "path": "/etc/php/7.0/cli/php.ini",
             "preset": "dev"
+        },
+        
+        {
+            "path": "/etc/php/7.1/cgi/php.ini",
+            "preset": "prod"
         },
         {
             "path": "/etc/php/7.1/fpm/php.ini",
             "preset": "prod"
         },
-              {
-            "path": "/etc/php/7.2/cgi/php.ini",
-            "preset": "prod"
+        {
+            "path": "/etc/php/7.1/fpm/php.dev.ini",
+            "preset": "dev"
         },
         {
-            "path": "/etc/php/7.2/cli/php.ini",
+            "path": "/etc/php/7.1/cli/php.ini",
             "preset": "dev"
+        },
+        
+        {
+            "path": "/etc/php/7.2/cgi/php.ini",
+            "preset": "prod"
         },
         {
             "path": "/etc/php/7.2/fpm/php.ini",
             "preset": "prod"
         },
-              {
-            "path": "/etc/php/7.3/cgi/php.ini",
-            "preset": "prod"
+        {
+            "path": "/etc/php/7.2/fpm/php.dev.ini",
+            "preset": "dev"
         },
         {
-            "path": "/etc/php/7.3/cli/php.ini",
+            "path": "/etc/php/7.2/cli/php.ini",
             "preset": "dev"
+        },
+        
+        {
+            "path": "/etc/php/7.3/cgi/php.ini",
+            "preset": "prod"
         },
         {
             "path": "/etc/php/7.3/fpm/php.ini",
             "preset": "prod"
         },
         {
+            "path": "/etc/php/7.3/fpm/php.dev.ini",
+            "preset": "dev"
+        },
+        {
+            "path": "/etc/php/7.3/cli/php.ini",
+            "preset": "dev"
+        },
+        
+        {
             "path": "/etc/php/7.4/cgi/php.ini",
             "preset": "prod"
         },
         {
-            "path": "/etc/php/7.4/cli/php.ini",
+            "path": "/etc/php/7.4/fpm/php.ini",
+            "preset": "prod"
+        },
+        {
+            "path": "/etc/php/7.4/fpm/php.dev.ini",
             "preset": "dev"
         },
         {
-            "path": "/etc/php/7.4/fpm/php.ini",
-            "preset": "prod"
+            "path": "/etc/php/7.4/cli/php.ini",
+            "preset": "dev"
         }
+        
     ]
 }
